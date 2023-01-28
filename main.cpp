@@ -90,7 +90,7 @@ int main(int, char**)
         {
             static int frame = 0;
 
-            ImGui::Begin("Visualizer!");                          // Create a window called "Hello, world!" and append into it.
+            ImGui::Begin("Visualizer!");
             ImGui::SliderInt("frame", &frame, 0, frames.size() - 1);
             ImGui::TextUnformatted(frames[frame].c_str());
             ImGui::End();
